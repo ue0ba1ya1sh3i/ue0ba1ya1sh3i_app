@@ -1,0 +1,36 @@
+{
+  "name": "ue0ba1ya1sh3i_app",
+  "version": "1.0.0",
+  "description": "This project is mainly about developing applications for computers such as Windows.",
+  "main": "index.js",
+  "build": {
+    "appId": "com.example.myapp",
+    "win": {
+      "target": [
+        {
+          "target": "nsis",
+          "arch": [
+            "x64",
+            "ia32"
+          ]
+        }
+      ],
+      "asar": true
+    }, 
+    "nsis": {
+      "oneClick": false,
+      "perMachine": true,
+      "allowElevation": true,
+      "allowToChangeInstallationDirectory": true
+    }
+  },
+  "scripts": {
+    "dev": "electron .",
+    "build": "electron-builder"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^31.3.1"
+  }
+}

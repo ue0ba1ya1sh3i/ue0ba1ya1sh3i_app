@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="/icon.png" type="image/x-icon">
+  <title>ue0ba1ya1sh3i | forPC</title>
+</head>
+<body>
+  <script>
+    //send from node.js
+    const { ipcRenderer } = require('electron');
+    ipcRenderer.on('pageURL', (event, message) => {
+      window.alert(message);
+    });
+  </script>
+</body>
+</html>
